@@ -1,0 +1,24 @@
+plugins {
+    id 'scala'
+}
+
+allprojects {
+
+    apply plugin: 'idea'
+
+    group 'godpan.me'
+    version '1.0-SNAPSHOT'
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.13.2'
+    testImplementation 'junit:junit:4.12'
+}
+
